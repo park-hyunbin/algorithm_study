@@ -1,9 +1,16 @@
-N = int(input())
-A = N // 10
-B = N % 10
-C = (N // 10) + (N % 10)
+import sys
+n = int(sys.stdin.readline())
+check = n
+count = 0
 
-for i in range():
-    if(C == N) :
+while True :
+    sum = n//10 + n%10
+    new = n%10*10 + sum%10
+    count += 1
+
+    n = new
+
+    if new == check :
         break
 
+print(count)
