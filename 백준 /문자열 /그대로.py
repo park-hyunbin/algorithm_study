@@ -1,5 +1,5 @@
-a = list()
-import sys
-for line in sys.stdin :
-    a.append(line)
-print(a)
+while True :
+    try :
+        print(input())
+    except EOFError:
+        break
